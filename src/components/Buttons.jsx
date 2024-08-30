@@ -1,8 +1,15 @@
-const Buttons = ({ filterByType, setSat, displaySats }) => {
+import satData from "./satData";
+//import "./styling.css";//
+
+const Buttons = ({ filterByType, setSat, orbitTypes }) => {
   return (
     <div>
-      <button>Placeholder Button</button>
-      <button>All Orbits</button>
+      {orbitTypes.map((sat, id) => (
+      <button onClick={() => filterByType(sat)} key={id}>
+        {sat} Orbit
+      </button>
+      ))}
+      <button onClick={() => setSat(satData)}>All Orbits</button>
     </div>
   );
 };
