@@ -22,7 +22,7 @@ function App() {
       <Buttons 
         filterByType={filterByType}
         setSat={setSat}
-        displaySats={displaySats}
+        orbitTypes={orbitTypes}
       />
       <Table sat={sat} />
     </div>

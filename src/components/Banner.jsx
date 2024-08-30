@@ -1,5 +1,5 @@
 //import "./styling.css";//
-function Banner() {
+function Banner(){
     return(
         <div>
             <header>Orbit Report</header>
