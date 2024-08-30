@@ -1,4 +1,5 @@
-//import "./styling.css";//
+import "./styling.css";
+
 function Banner(){
     return(
         <div>
